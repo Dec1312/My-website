@@ -97,7 +97,7 @@ export function ContactSection() {
             Operations Excellence • Customer Experience • Data-Driven Leadership
           </p>
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-navy-secondary border border-cyan-accent/20 text-xs text-cyan-accent">
-            <span></span> 
+            <span>💬</span> Powered by AI Recruiter Assistant • Ask questions about my experience
           </div>
         </div>
       </footer>

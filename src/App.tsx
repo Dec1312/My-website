@@ -4,7 +4,6 @@ import { ImpactDashboard } from './components/ImpactDashboard';
 import { CareerTimeline } from './components/CareerTimeline';
 import { SkillsSection } from './components/SkillsSection';
 import { ContactSection } from './components/ContactSection';
-import { RecruiterAssistant } from './components/RecruiterAssistant';
 import { FloatingFeatures } from './components/FloatingFeatures';
 
 export default function App() {
@@ -19,7 +18,6 @@ export default function App() {
         <SkillsSection />
         <ContactSection />
       </main>
-      <RecruiterAssistant />
     </div>
   );
 }
