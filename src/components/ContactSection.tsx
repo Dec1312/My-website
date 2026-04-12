@@ -79,7 +79,7 @@ export function ContactSection() {
           transition={{ delay: 0.4 }}
         >
           <a 
-            href={`mailto:${ahmadData.personal.email}`}
+            href={`mailto:ahmad.yamm@outlook.com`}
             className="inline-block bg-yellow-accent text-navy-primary px-8 py-4 rounded-md font-bold text-lg hover:bg-yellow-400 transition-all hover:scale-105"
           >
             Send Email
