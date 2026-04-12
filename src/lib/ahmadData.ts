@@ -23,7 +23,7 @@ export const ahmadData = {
     { label: "Audit Compliance", value: 100, suffix: "%", icon: "healthcare" },
     { label: "Productivity Gain", value: 35, suffix: "%", icon: "upward" },
     { label: "Claim Accuracy", value: 98, suffix: "%", icon: "checkmark" },
-    { label: "Response Time", value: -60, suffix: "%", icon: "downward" },
+    { label: "Response Time", value: 60, suffix: "%", icon: "downward" },
     { label: "Customer Retention", value: 90, suffix: "%", icon: "users" },
     { label: "Customer Satisfaction", value: 94, suffix: "%", icon: "star" }
   ],
