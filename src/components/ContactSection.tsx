@@ -98,7 +98,6 @@ export function ContactSection() {
           </p>
         
           </div>
-        </div>
       </footer>
     </section>
   );
