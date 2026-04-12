@@ -96,7 +96,6 @@ export function ContactSection() {
           <p className="text-text-muted text-xs mb-6 font-mono">
             Operations Excellence • Customer Experience • Data-Driven Leadership
           </p>
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-navy-secondary border border-cyan-accent/20 text-xs text-cyan-accent">
         
           </div>
         </div>
