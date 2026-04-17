@@ -8,6 +8,48 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <!-- Unique Visitor Counter Display -->
+<div style="text-align: center; margin-top: 20px; font-family: sans-serif; opacity: 0.6; color: #ffffff;">
+    <span id="visitor-count">...</span>
+</div>
+
+<script>
+    (function() {
+        // This is your unique code
+        var goatCounterCode = 'ahmad-alomari'; 
+        
+        // This function fetches the count and puts it in the <span> above
+        function updateCount() {
+            var r = new XMLHttpRequest();
+            r.addEventListener('load', function() {
+                try {
+                    var data = JSON.parse(this.responseText);
+                    // This updates the "..." with the actual number
+                    document.getElementById('visitor-count').innerText = data.count;
+                } catch (e) {
+                    console.error("Error parsing visitor count");
+                }
+            });
+            // Fetch the total unique hits
+            r.open('GET', 'https://' + goatCounterCode + '.goatcounter.com/counter/TOTAL.json' );
+            r.send();
+        }
+
+        // This is the tracking script you found, added dynamically
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = '//gc.zgo.at/count.js';
+        script.dataset.goatcounter = 'https://' + goatCounterCode + '.goatcounter.com/count';
+        
+        // Once the script loads, we wait 1 second and then show the number
+        script.onload = function( ) {
+            setTimeout(updateCount, 1000);
+        };
+        
+        document.head.appendChild(script);
+    })();
+</script>
+
   </body>
 </html>
 
